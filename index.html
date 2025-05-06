@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Social Links</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<style>
+  /* General Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f4f4f9;
+    min-height: 100svh; /* Support dynamic mobile view height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  header .avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2d2d2d;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ff0000;
+  }
+
+  .bio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .social-icon {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .social-icon i {
+    font-size: 18px;
+  }
+
+  .social-icon:hover {
+    color: #0077b5;
+    transform: scale(1.1);
+  }
+
+  .social-icon.blogger:hover {
+    color: #f57c00;
+  }
+
+  .social-icon.youtube:hover {
+    color: #ff0000;
+  }
+
+  .social-icon.whatsapp:hover,
+  .social-icon.whatsapp-group:hover,
+  .social-icon.whatsapp-channel:hover {
+    color: #25d366;
+  }
+
+  .social-icon.telegram-number:hover,
+  .social-icon.telegram-group:hover {
+    color: #0088cc;
+  }
+
+  .social-icon.instagram:hover {
+    color: #e4405f;
+  }
+
+  .social-icon.tiktok:hover {
+    color: #000000;
+  }
+
+  .social-icon.facebook:hover {
+    color: #3b5998;
+  }
+
+  .social-icon.twitter:hover {
+    color: #1da1f2;
+  }
+
+  .social-icon.rednote:hover {
+    color: #ff5722;
+  }
+
+  .social-icon.linkedin:hover {
+    color: #0077b5;
+  }
+
+  footer p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video">
+    <source src="video.mkv" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <div class="avatar">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjedcF6Jta-j0hyVB7pO18hPaw1uTkZDReUMikV0sbvi2iGbe5LW7EG8Yw1_lAoH-0iPyabNWaABiw6Iu6zWGJtTaGvM_oEIFWQdvnfPdZhiuzw1nF2iKJgOIuJWJ7B2AaaqlipnN0MFt2e9toevWsZk93cOiHNQWbi6fJQUM7euTp9BWCgJ-INiMn4FnQ/s320/Picsart_24-12-08_22-43-38-353.jpg"
+          alt="Our Logo"
+        />
+      </div>
+      <h2>PTD KING</h2>
+      <h1>PABASARA TD - THE OWNER</h1>
+      <p class="bio">
+        A software developer, modder and content creator from Sri Lanka.
+      </p>
+    </header>
+
+    <!-- Social Media Links -->
+    <section class="social-links">
+      <a href="https://youtube.com/@ptd_king_ofc" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://ptdking.blogspot.com" target="_blank" class="social-icon blogger"><i class="fab fa-blogger"></i> Blogger</a>
+      <a href="https://wa.me/message/56MGELPTWJFIM1" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://chat.whatsapp.com/CEAuvY2CSAr0UZGIljDZpM" target="_blank" class="social-icon whatsapp-group"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+      <a href="https://whatsapp.com/channel/0029Va9oiIf9MF99HZ4mEL35" target="_blank" class="social-icon whatsapp-channel"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+      <a href="https://chat.whatsapp.com/K3vJCHjLg0PFP0i9ZFKxUh" target="_blank" class="social-icon whatsapp-group"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+      <a href="https://t.me/bloodx_ptd_king_zir" target="_blank" class="social-icon telegram-number"><i class="fab fa-telegram"></i> Telegram Number</a>
+      <a href="https://t.me/PTD_KING_TC" target="_blank" class="social-icon telegram-group"><i class="fab fa-telegram"></i> Telegram Group</a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://tiktok.com/@_god___ptd___king___xvip" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://x.com/yourprofile" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i> X (Twitter)</a>
+      <a href="https://www.rednote.com/yourprofile" target="_blank" class="social-icon rednote"><i class="fab fa-rss"></i> RedNote</a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </section>
+
+    <!-- Call to Action -->
+    <footer>
+      <p>Stay Connected!</p>
+    </footer>
+  </div>
+</body>
+</html>
